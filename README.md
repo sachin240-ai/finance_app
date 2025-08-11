@@ -7,3 +7,12 @@ Manage income, expenses, and budgets directly from your terminal.
 - Budget Management
 - Monthly/Yearly Reports
 - Data Backup/Restore
+
+## How to Run
+1. Ensure Python 3.x is installed.
+2. Run: `python main.py`
+3. Follow on-screen options to register or login.
+
+## Dependencies
+- Built-in modules: sqlite3, hashlib, shutil
+
