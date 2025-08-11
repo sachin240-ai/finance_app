@@ -34,5 +34,5 @@ def check_budget(user_id, category):
         ''', (user_id, category))
         total_spent = cursor.fetchone()[0] or 0
         if total_spent > limit_row[0]:
-            return f"⚠️ Budget exceeded for category '{category}'! Limit: {limit_row[0]}, Spent: {total_spent}"
-    return "✅ Within budget"
+            return f" Budget exceeded for category '{category}'! Limit: {limit_row[0]}, Spent: {total_spent}"
+    return "Within budget"
