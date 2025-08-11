@@ -49,17 +49,17 @@ def main():
         if choice == "1":
             uname, pwd = prompt_user_login()
             if register(uname, pwd):
-                print("✅ Registration successful.")
+                print("Registration successful.")
             else:
-                print("❌ Username already exists.")
+                print("Username already exists.")
         elif choice == "2":
             uname, pwd = prompt_user_login()
             user = login(uname, pwd)
             if user:
-                print("✅ Login successful.")
+                print("Login successful.")
                 menu(user)
             else:
-                print("❌ Invalid credentials.")
+                print("Invalid credentials.")
         elif choice == "3":
             break
 
